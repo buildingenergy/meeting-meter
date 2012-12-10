@@ -1,0 +1,27 @@
+name: meetingmeter
+description: Doing our part to keep meetings short.
+repo: https://github.com/buildingenergy/meeting-meter
+setup:
+    codebases:
+        - "meter": "git@github.com:buildingenergy/meeting-meter.git"
+    primary_codebase: meter
+       
+
+start:
+    vagrant-box:
+        - "vagrant up"
+    meter:
+        - "python meeting_meter.py"
+
+stop:
+    meter:
+        - "kill"
+
+destroy:
+    meter:
+        
+
+test:
+    meter:
+        - "unit": "nosetests"
+
