@@ -5,7 +5,7 @@ setup:
     codebases:
         - "meter": "git@github.com:buildingenergy/meeting-meter.git"
     primary_codebase: meter
-       
+    system_requirements:       
 
 start:
     vagrant-box:
